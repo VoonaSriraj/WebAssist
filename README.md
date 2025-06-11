@@ -1,0 +1,106 @@
+🧠 WebAssist – RAG-Powered AI Web Assistant
+WebAssist is a Retrieval-Augmented Generation (RAG) based chatbot application built using Streamlit, LangChain, FAISS, and ChatGroq's LLMs. This app allows users to ask questions related to content scraped from the web (e.g., GeeksforGeeks C++ documentation) and get context-aware answers in real time.
+
+
+
+🚀 Features
+🔍 Web Scraping using WebBaseLoader
+
+🧠 HuggingFace Embeddings for semantic understanding
+
+🗂️ FAISS Vector Store for efficient document retrieval
+
+💬 ChatGroq (LLaMA-3) based LLM responses
+
+⚡ Fast and reliable Q&A experience
+
+🧾 View relevant document chunks used in answers
+
+✅ Built with LangChain pipelines and RAG architecture
+
+📦 Tech Stack
+Component	Technology
+UI Framework	Streamlit
+Embeddings	HuggingFace (all-MiniLM-L6-v2)
+Vector Store	FAISS
+Language Model	ChatGroq (llama-3.3-70b-versatile)
+Text Splitter	RecursiveCharacterTextSplitter
+Prompt Template	LangChain's ChatPromptTemplate
+Docs Source	GeeksforGeeks - C++ Page
+
+🛠️ Installation
+Prerequisites
+Python 3.8+
+
+pip
+
+virtualenv (optional)
+
+groq API key (free from https://console.groq.com)
+
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/VoonaSriraj/WebAssist.git
+cd WebAssist
+2. Create and Activate Virtual Environment (optional but recommended)
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+3. Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+4. Setup .env File
+Create a .env file in the root directory:
+
+ini
+Copy
+Edit
+GROQ_API_KEY=your_groq_api_key_here
+▶️ Running the App
+bash
+Copy
+Edit
+streamlit run app.py
+Open the URL provided in the terminal to interact with the chatbot.
+
+💡 Usage
+Enter a question in the text input box (e.g., "What is a pointer in C++?")
+
+The model will search the GeeksforGeeks C++ documentation using vector similarity.
+
+It will generate an answer based on the most relevant chunks.
+
+You can expand the "📄 View Source Documents" section to view retrieved context.
+
+📁 Project Structure
+bash
+Copy
+Edit
+WebAssist/
+├── app.py               # Main Streamlit app
+├── .env                 # Contains API key (not committed)
+├── requirements.txt     # Python dependencies
+└── README.md            # You're here
+🤝 Contributing
+Pull requests are welcome! Feel free to open issues for feature requests or bug reports.
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+🙌 Acknowledgements
+LangChain
+
+FAISS
+
+HuggingFace Transformers
+
+Groq
+
+Streamlit
+
