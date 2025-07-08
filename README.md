@@ -1,24 +1,24 @@
 
-# 🧠 WebAssist – RAG-Powered AI Web Assistant
+#  WebAssist – RAG-Powered AI Web Assistant
 
 WebAssist is a **Retrieval-Augmented Generation (RAG)** based chatbot application built using **Streamlit**, **LangChain**, **FAISS**, and **ChatGroq's LLMs**. This app allows users to ask questions related to content scraped from the web (e.g., GeeksforGeeks C++ documentation) and get context-aware answers in real time.
 
 
 ---
 
-## 🚀 Features
+##  Features
 
-* 🔍 **Web Scraping** using `WebBaseLoader`
-* 🧠 **HuggingFace Embeddings** for semantic understanding
-* 🗂️ **FAISS Vector Store** for efficient document retrieval
-* 💬 **ChatGroq (LLaMA-3)** based LLM responses
-* ⚡ Fast and reliable Q\&A experience
-* 🧾 View relevant document chunks used in answers
-* ✅ Built with **LangChain** pipelines and RAG architecture
+*  **Web Scraping** using `WebBaseLoader`
+*  **HuggingFace Embeddings** for semantic understanding
+*  **FAISS Vector Store** for efficient document retrieval
+*  **ChatGroq (LLaMA-3)** based LLM responses
+*  Fast and reliable Q\&A experience
+*  View relevant document chunks used in answers
+*  Built with **LangChain** pipelines and RAG architecture
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 
 | Component       | Technology                           |
 | --------------- | ------------------------------------ |
@@ -32,7 +32,7 @@ WebAssist is a **Retrieval-Augmented Generation (RAG)** based chatbot applicatio
 
 ---
 
-## 🛠️ Installation
+##  Installation
 
 ### Prerequisites
 
@@ -71,7 +71,7 @@ GROQ_API_KEY=your_groq_api_key_here
 
 ---
 
-## ▶️ Running the App
+##  Running the App
 
 ```bash
 streamlit run app.py
@@ -81,7 +81,7 @@ Open the URL provided in the terminal to interact with the chatbot.
 
 ---
 
-## 💡 Usage
+##  Usage
 
 1. Enter a question in the text input box (e.g., "What is a pointer in C++?")
 2. The model will search the GeeksforGeeks C++ documentation using vector similarity.
@@ -90,7 +90,7 @@ Open the URL provided in the terminal to interact with the chatbot.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 WebAssist/
@@ -102,19 +102,19 @@ WebAssist/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests are welcome! Feel free to open issues for feature requests or bug reports.
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 * [LangChain](https://github.com/langchain-ai/langchain)
 * [FAISS](https://github.com/facebookresearch/faiss)
